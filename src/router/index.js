@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import store from "../stores";
-
+import AlertsView from "../views/AlertsView.vue";
 import DevicesView from "../views/DevicesView.vue";
 import DeviceView from "../views/DeviceView.vue";
 import ErrorView from "../views/ErrorView.vue";
@@ -46,6 +46,11 @@ function createRouter() {
         path: "/groups",
         name: "groups",
         component: GroupsView
+      },
+      {
+        path: "/alerts",
+        name: "alerts",
+        component: AlertsView
       },
       {
         path: "/groups/:groupname",
